@@ -1,4 +1,5 @@
 import React from 'react';
+import { StatusBar } from 'expo-status-bar';
 import { SafeAreaView } from 'react-native';
 import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/integration/react';
@@ -21,6 +22,7 @@ export default function App(): JSX.Element {
             <NavigationStacks/>
           </NavigationContainer>
           <FlashMessage position="top" />
+          <StatusBar style="auto" />
         </SafeAreaView>
       </PersistGate>
     </Provider>
