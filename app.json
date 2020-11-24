@@ -1,20 +1,30 @@
 {
-  "name": "Scratby Premier",
-  "displayName": "scratby-premier",
   "expo": {
     "name": "Scratby Premier",
     "slug": "scratby-premier",
-    "version": "1.0.0",
+    "version": "0.39.1",
     "platforms": [
       "ios",
-      "android",
-      "web"
+      "android"
     ],
+    "splash":{
+      "image": "./assets/splash.png",
+      "backgroundColor": "#4c0743",
+      "resizeMode": "cover"
+    },
+    "icon": "./assets/icon.png",
+    "orientation": "portrait",
     "assetBundlePatterns": [
       "**/*"
     ],
     "ios": {
-      "bundleIdentifier": "com.gerrytucker.scratby-premier"
-    }
+      "bundleIdentifier": "com.scratbygardencentre.shop",
+      "buildNumber": "0.39.1",
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.scratbygardencentre.shop"
+    },
+    "privacy": "unlisted"
   }
 }
